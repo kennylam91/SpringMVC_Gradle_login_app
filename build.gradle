@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+    id 'war'
+}
+
+group 'com.lampv'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.springframework', name: 'spring-webmvc', version: '4.3.24.RELEASE'
+
+}
