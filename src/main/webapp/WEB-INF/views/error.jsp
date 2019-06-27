@@ -5,5 +5,6 @@
 </head>
 <body>
 <h1>Login error</h1>
+<a href="/home">Back</a>
 </body>
 </html>
