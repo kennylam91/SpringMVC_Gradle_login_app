@@ -25,7 +25,7 @@
         </table>
     </fieldset>
 </form:form>
-<form:form action="signup" method="post">
+<form:form action="signup" method="get">
     <button type="submit">Sign up</button>
 </form:form>
 </body>

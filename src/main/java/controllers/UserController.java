@@ -30,5 +30,20 @@ public class UserController {
         }
 
     }
+    @GetMapping("/signup")
+    public ModelAndView showSignupPage(){
+        ModelAndView modelAndView = new ModelAndView("signup");
+        modelAndView.addObject("newUser",new User());
+
+        return modelAndView;
+    }
+
+    @PostMapping("/signup")
+    public ModelAndView signup(@ModelAttribute("newuser") User newuser){
+        UserDao.getUsers().add(newuser);
+        ModelAndView modelAndView = new ModelAndView("finish_signup");
+        modelAndView.addObject("newuser",newuser);
+        return modelAndView;
+    }
 
 }

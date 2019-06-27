@@ -44,4 +44,12 @@ public class UserDao {
         }
         return null;
     }
+
+    public static List<User> getUsers() {
+        return users;
+    }
+
+    public static void setUsers(List<User> users) {
+        UserDao.users = users;
+    }
 }
